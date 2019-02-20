@@ -1,3 +1,8 @@
+/** 
+ * Author: Kevin Buffardi & Jasmin Mousavi
+ * Course: CSCI 430
+ * A program that takes in 3 numbers and sorts them in descending order
+ */
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -22,15 +27,15 @@ int main()
 
 void sortDescending(int& first, int& second, int& third)
 {
-  if( first > third )
+  if( first < third )
   {
     swap(first,third);
   }
-  if( first > second )
+  if( first < second )
   {
     swap(first,second);
   }
-  if( second > third )
+  if( second < third )
   {
     swap(second,third);
   }
