@@ -3,7 +3,8 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void sortDescending(int,int,int);
+void sortDescending(int&,int&,int&);
+
 void swap(int&,int&);
 
 int main()
@@ -19,17 +20,17 @@ int main()
   return 0;
 }
 
-void sortDescending(int first, int second, int third)
+void sortDescending(int& first, int& second, int& third)
 {
-  if( first < third )
+  if( first > third )
   {
     swap(first,third);
   }
-  if( first < second )
+  if( first > second )
   {
     swap(first,second);
   }
-  if( second < third )
+  if( second > third )
   {
     swap(second,third);
   }
