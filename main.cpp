@@ -59,14 +59,14 @@ void sortDescending(int& first, int& second, int& third)
 /** Function swap
  * takes in 2 numbers and swaps them
  * Parameters:
- * int& first   -integer used to swap with seocond 
- * int& second  -integer used to swap with first
+ * int& a  -integer used to swap with b
+ * int& b  -integer used to swap with a
  *
  * returns void
  */
-void swap(int &first, int &second)
+void swap(int &a, int &b)
 {
-  int temp = first;
-  first = second;
-  second = temp;
+  int temp = a;
+  a = b;
+  b = temp;
 }
